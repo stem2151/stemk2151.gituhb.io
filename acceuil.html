@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="fr">
+<!--<![endif]-->
+<head>
+    <!-- BEGIN META SECTION -->
+    <meta charset="utf-8">
+    <title>kairos.home.acceuil.label</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="Gestionnaire d&#39;&eacute;tablissement" name="description"/>
+    <meta content="SENSOFT" name="author"/>
+    <link rel="shortcut icon" href="/kairos_esmt/assets/favicon-89565bc009a70fa70d91b33961d3bbf3.ico"/>
+    
+    
+    <!-- END META SECTION -->
+
+    <style>
+    .zind {
+        z-index: 9995;
+    }
+        i[class^="icon-"]{
+            font-size : 24px;
+            text-shadow : none;
+            font-weight : 300;
+        }
+
+        .required-indicator{
+            color: red;
+        }
+
+    .scrolling {
+        height: 400px;
+        overflow: scroll;
+    }
+     .error{
+         color: red;
+     }
+
+    .fc-day-grid-event.fc-event.fc-start.fc-end.fa.fa-clock-o{
+        display: inline-grid!important;
+    }
+    .fc-day-grid-event.fc-event.fc-start.fc-end.fa.fa-video-camera{
+        display: inline-grid!important;
+    }
+    .fc-day-grid-event.fc-event.fc-start.fc-end.fa.fa-file-video-o{
+        display: inline-grid!important;
+    }
+    </style>
+
+
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="layout" content="main"/>
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet"
+          type="text/css">
+    <link rel="stylesheet" href="/kairos_esmt/assets/application-def5773e31750c92b3313e12e859d843.css"/>
+    <link rel="stylesheet" href="/kairos_esmt/assets/application.style-fd6e0ef4ce0e54e062cc57bd7e463ef2.css"/>
+    <link rel="stylesheet" href="/kairos_esmt/assets/application.theme-0fccc862662e21ffba18a5a4f807b83a.css"/>
+    <link rel="stylesheet" href="/kairos_esmt/assets/application.calendar-edd949fd5b381d351b95bb70f479d8fa.css"/>
+
+
+</head>
+
+<body class="page-container-bg-solid page-sidebar-closed-hide-logo page-boxed page-header-fixed">
+
+<!-- spinner div -->
+<div class="modal fade" id="spinner" role="basic" aria-hidden="true" data-backdrop="false" data-keyboard="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="/kairos_esmt/assets/avatar/loading-spinner-grey-48c4e61e840de55082d58c22ff353d12.gif" alt="" class="loading"/>
+                <span>
+                    &nbsp;&nbsp;En cours de traitement... </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="rapportGenerationBulletin" class="modal fade" role="dialog" aria-hidden="true" tabindex="-1" style="display: none;">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header bg-grey">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                <h4 class="modal-title">
+                    <i class="fa fa-file-text-o p-r-10"></i>
+                    Rapport génération bulletin de notes
+                </h4>
+            </div>
+
+            <div class="modal-body">
+                <h4>La génération de bulletins de notes que vous aviez lancée s'est terminée. Vous pouvez consulter le résultat en cliquant sur ce <a href="/kairos_esmt/bulletinProgramme/showGenerationBulletin" target="_blank">lien</a>. </h4>
+            </div>
+
+            <div class="modal-footer">
+                <div class="col-md-4 pull-right">
+                    <button type="button" data-dismiss="modal" class="btn btn-default">
+                        default.closeModal.label
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- BEGIN HEADER -->
+
+
+
+
+
+
+<div class="page-header navbar navbar-fixed-top">
+
+    <!-- BEGIN HEADER INNER -->
+
+    <div class="page-header-inner container">
+        <!-- BEGIN LOGO -->
+        <div class="page-logo">
+            <a href="/kairos_esmt/portailEtudiant/index">
+                
+                    <img src="/kairos_esmt/assets/kairos_logo-9500d2bef5e33e6cfe17c1bd8104798f.png" class="logo-default" style="width: 120px;" alt=""/>
+                
+            </a>
+
+            <div class="menu-toggler sidebar-toggler" id="wrapper">
+                <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+            </div>
+        </div>
+        <!-- END LOGO -->
+        <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+        <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse"
+           data-target=".navbar-collapse">
+        </a>
+        <!-- END RESPONSIVE MENU TOGGLER -->
+
+        <!-- BEGIN PAGE TOP -->
+        <div class="page-top">
+
+            <div class="top-menu">
+
+                
+
+
+                <ul class="nav navbar-nav pull-right">
+                    <li class="separator hide">
+                    </li>
+                <!-- BEGIN NOTIFICATION DROPDOWN -->
+                <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                <!-- END NOTIFICATION DROPDOWN -->
+                <!-- BEGIN INBOX DROPDOWN -->
+                <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                <!-- BEGIN TODO DROPDOWN -->
+                <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                <!-- END TODO DROPDOWN -->
+                <!-- BEGIN USER LOGIN DROPDOWN -->
+                <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+
+                    
+
+
+                    <li class="divider" style="margin-top: 27px;">
+                        <b>ESMT</b>
+                    </li>
+                    
+
+
+                    <li class="dropdown dropdown-user dropdown-light">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+                           data-close-others="true">
+                            <!-- DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
+                            <img class="img-responsive img-circle img-rounded"
+                                 src="/kairos_esmt/etablissement/renderLogo/4"/>
+                        </a>
+                    </li>
+
+                    <li class="dropdown dropdown-user dropdown-light">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+                           data-close-others="true">
+                            <span class="username username-hide-on-mobile">
+                                *****</span>
+                        <!-- DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
+                            
+                                <img class="img-responsive img-circle " style="width:39px; height:39px;"
+                                     src="/kairos_esmt/user/renderConnectedUserPhoto"/>
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-default">
+                            
+
+                            
+
+                            <li>
+                                <a href="/kairos_esmt/logout/index">
+                                    <i class="icon-key"></i>
+                                    user.disconnect.label
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- END USER LOGIN DROPDOWN -->
+                </ul>
+            </div>
+            <!-- END TOP NAVIGATION MENU -->
+        </div>
+        <!-- END PAGE TOP -->
+    </div>
+
+
+    <!-- END HEADER INNER -->
+</div>
+
+<div class="clearfix">
+</div>
+
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="container">
+    <div class="page-container">
+        <!-- BEGIN MAIN SIDEBAR -->
+        
+
+
+
+
+<div class="page-sidebar-wrapper">
+    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+    <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+    <div class="page-sidebar navbar-collapse collapse">
+        <!-- BEGIN SIDEBAR MENU -->
+
+        <ul class="page-sidebar-menu page-sidebar-menu-hover-submenu page-sidebar-menu-compact"
+            data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+
+        
+
+            
+            
+                
+                    <li class="active">
+                        <a href="/kairos_esmt/portailEtudiant/index">
+                            <i class="icon-home"></i>
+                            menu.accueil.label
+
+                        </a>
+                    </li>
+                
+            
+
+        
+            
+            
+                
+                    <li class="">
+                        <a href="/kairos_esmt/portailEtudiant/showUser">
+                            <i class="icon-user"></i>
+                            menuPortailEtudiant.profil.label
+
+                        </a>
+                    </li>
+                
+            
+
+        
+            
+            
+                
+                    <li class="">
+                        <a href="/kairos_esmt/portailEtudiant/cours">
+                            <i class="icon-book-open"></i>
+                            menuEtu.cours.label
+
+                        </a>
+                    </li>
+                
+            
+
+        
+            
+            
+                
+                    <li class="">
+                        <a href="/kairos_esmt/portailEtudiant/emploiDuTemps">
+                            <i class="icon-calendar"></i>
+                            menu.emploiDutemps.label
+
+                        </a>
+                    </li>
+                
+            
+
+        
+            
+            
+                
+                    <li class="">
+                        <a href="/kairos_esmt/portailEtudiant/paiement">
+                            <i class="icon-list"></i>
+                            menuPortailEtudiant.frais.payes.label
+
+                        </a>
+                    </li>
+                
+            
+
+        
+            
+            
+                
+                    <li class="">
+                        <a href="/kairos_esmt/portailEtudiant/impayes">
+                            <i class="icon-close"></i>
+                            menuPortailEtudiant.frais.imppayes.label
+
+                        </a>
+                    </li>
+                
+            
+
+        
+            
+            
+                
+                    <li class="">
+                        <a href="/kairos_esmt/portailEtudiant/note">
+                            <i class="icon-note"></i>
+                            menuPortailEtudiant.note.label
+
+                        </a>
+                    </li>
+                
+            
+
+        
+            
+            
+
+        
+            
+            
+
+        
+            
+            
+                
+                    <li class="">
+                        <a href="/kairos_esmt/portailEtudiant/assiduite">
+                            <i class="icon-clock"></i>
+                            menu.assiduite.label
+
+                        </a>
+                    </li>
+                
+            
+
+        
+            
+            
+
+        
+            
+            
+
+
+        
+            
+            
+
+        <!-- END SIDEBAR MENU -->
+
+        
+            
+            
+                
+                    <li class="">
+                        <a href="/kairos_esmt/portailEtudiant/pointage">
+                            <i class="fa fa-book"></i>
+                            cahierText.label
+
+                        </a>
+                    </li>
+                
+            
+
+        </ul>
+
+    </div>
+
+</div>
+
+        <!-- END SIDEBAR -->
+        <!-- BEGIN CONTENT -->
+        <div class="page-content-wrapper">
+            <div class="page-content">
+                <!-- BEGIN PAGE HEAD -->
+                <div class="page-head">
+                    <!-- BEGIN PAGE TITLE -->
+                    <!-- BEGIN PAGE HEADER-->
+                    <div class="page-bar">
+                        <ul class="page-breadcrumb">
+                            <li>
+                                <a href="/kairos_esmt">
+                                    <i class="fa fa-home"></i>
+                                    app.home
+                                </a>
+                                <i class="fa fa-angle-right"></i>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- END PAGE HEADER-->
+
+                    <!-- BEGIN PAGE CONTENT-->
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="portlet light">
+                                <div class="portlet-title">
+                                    <div class="caption">
+                                        <i class="fa fa-home font-blue-sharp"></i>
+                                        <span class="caption-subject font-blue-sharp bold uppercase">
+                                            app.home
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="portlet-body form">
+                                    <div class="form-body">
+                                        <div class="row ">
+
+                                            <div class="row ">
+                                                <div class="col-md-6">
+                                                    <div class="portlet box blue">
+                                                        <div class="portlet-title">
+                                                            <div class="caption">
+                                                                <i class="fa fa-edit"></i>
+                                                                <i style="font-size: medium;">
+                                                                    notesRecentes.label
+                                                                </i>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="portlet-body form">
+                                                            <div class="scrolling" style="height: 250px">
+                                                                <div class="form-body">
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+
+                                                                            <table class="table table-bordered table-hover table-striped">
+                                                                                <tbody>
+                                                                                    
+                                                                                        
+
+                                                                                            <a href="#" class="list-group-item">
+                                                                                                <div class="row">
+                                                                                                    
+                                                                                                    <span class="pull-right">
+                                                                                                        
+                                                                                                            <span class="badge badge-default"></span>
+                                                                                                        
+                                                                                                    </span>
+                                                                                                </div>
+                                                                                                <br/>
+
+                                                                                                <span class="text-muted small">
+                                                                                                    <em><i class="fa fa-user"></i> ELECTRONIQUE; 
+                                                                                                    </em>
+                                                                                                </span>
+
+                                                                                                <span class="text-muted small pull-right">
+                                                                                                    <em>
+                                                                                                        <i class="fa fa-calendar"></i>
+                                                                                                        08/01/2024 - Semestre 3
+                                                                                                    </em>
+                                                                                                </span>
+                                                                                            </a>
+                                                                                        
+
+                                                                                            <a href="#" class="list-group-item">
+                                                                                                <div class="row">
+                                                                                                    <span class="pull-left">MATHEMATIQUE</span>
+                                                                                                    <span class="pull-right">
+                                                                                                        
+                                                                                                            
+                                                                                                                <span class="badge badge-success">2.2</span>
+                                                                                                            
+                                                                                                        
+                                                                                                    </span>
+                                                                                                </div>
+                                                                                                <br/>
+
+                                                                                                <span class="text-muted small">
+                                                                                                    <em><i class="fa fa-user"></i> SRK
+                                                                                                    </em>
+                                                                                                </span>
+
+                                                                                                <span class="text-muted small pull-right">
+                                                                                                    <em>
+                                                                                                        <i class="fa fa-calendar"></i>
+                                                                                                        02/04/2024 - Semestre 3
+                                                                                                    </em>
+                                                                                                </span>
+                                                                                            </a>
+                                                                                        
+
+                                                                                            <a href="#" class="list-group-item">
+                                                                                                <div class="row">
+                                                                                                    <span class="pull-left">COMPTABILITE</span>
+                                                                                                    <span class="pull-right">
+                                                                                                        
+                                                                                                            
+                                                                                                                <span class="badge badge-success">10.4</span>
+                                                                                                            
+                                                                                                        
+                                                                                                    </span>
+                                                                                                </div>
+                                                                                                <br/>
+
+                                                                                                <span class="text-muted small">
+                                                                                                    <em><i class="fa fa-user"></i> MERISE
+                                                                                                    </em>
+                                                                                                </span>
+
+                                                                                                <span class="text-muted small pull-right">
+                                                                                                    <em>
+                                                                                                        <i class="fa fa-calendar"></i>
+                                                                                                        24/03/2024 - Semestre 3
+                                                                                                    </em>
+                                                                                                </span>
+                                                                                            </a>
+                                                                                        
+
+                                                                                            <a href="#" class="list-group-item">
+                                                                                                <div class="row">
+                                                                                                    <span class="pull-left">CCNA 3</span>
+                                                                                                    <span class="pull-right">
+                                                                                                        
+                                                                                                            
+                                                                                                                <span class="badge badge-danger">9.0</span>
+                                                                                                            
+                                                                                                        
+                                                                                                    </span>
+                                                                                                </div>
+                                                                                                <br/>
+
+                                                                                                <span class="text-muted small">
+                                                                                                    <em><i class="fa fa-user"></i> ITE
+                                                                                                    </em>
+                                                                                                </span>
+
+                                                                                                <span class="text-muted small pull-right">
+                                                                                                    <em>
+                                                                                                        <i class="fa fa-calendar"></i>
+                                                                                                        24/03/2024 - Semestre 3
+                                                                                                    </em>
+                                                                                                </span>
+                                                                                            </a>
+                                                                                        
+
+                                                                                            <a href="#" class="list-group-item">
+                                                                                                <div class="row">
+                                                                                                    <span class="pull-left">Introduction aux r&eacute;seaux informatiques </span>
+                                                                                                    <span class="pull-right">
+                                                                                                        
+                                                                                                            
+                                                                                                                <span class="badge badge-success">8.84</span>
+                                                                                                            
+                                                                                                        
+                                                                                                    </span>
+                                                                                                </div>
+                                                                                                <br/>
+
+                                                                                                <span class="text-muted small">
+                                                                                                    <em><i class="fa fa-user"></i> LMK
+                                                                                                    </em>
+                                                                                                </span>
+
+                                                                                                <span class="text-muted small pull-right">
+                                                                                                    <em>
+                                                                                                        <i class="fa fa-calendar"></i>
+                                                                                                        24/05/2023 - Semestre 3
+                                                                                                    </em>
+                                                                                                </span>
+                                                                                            </a>
+                                                                                        
+
+                                                                                            <a href="#" class="list-group-item">
+                                                                                                <div class="row">
+                                                                                                    <span class="pull-left">Bases de la commutation temporelle</span>
+                                                                                                    <span class="pull-right">
+                                                                                                        
+                                                                                                            
+                                                                                                                <span class="badge badge-success">11.1</span>
+                                                                                                            
+                                                                                                        
+                                                                                                    </span>
+                                                                                                </div>
+                                                                                                <br/>
+
+                                                                                                <span class="text-muted small">
+                                                                                                    <em><i class="fa fa-user"></i> HML
+                                                                                                    </em>
+                                                                                                </span>
+
+                                                                                                <span class="text-muted small pull-right">
+                                                                                                    <em>
+                                                                                                        <i class="fa fa-calendar"></i>
+                                                                                                        23/09/2023 - Semestre 3
+                                                                                                    </em>
+                                                                                                </span>
+                                                                                            </a>
+                                                                                        
+
+                                                                                            <a href="#" class="list-group-item">
+                                                                                                <div class="row">
+                                                                                                    <span class="pull-left">Electronique analogique</span>
+                                                                                                    <span class="pull-right">
+                                                                                                        
+                                                                                                            
+                                                                                                                <span class="badge badge-success">1.86</span>
+                                                                                                            
+                                                                                                        
+                                                                                                    </span>
+                                                                                                </div>
+                                                                                                <br/>
+
+                                                                                                <span class="text-muted small">
+                                                                                                    <em><i class="fa fa-user"></i> TIR
+                                                                                                    </em>
+                                                                                                </span>
+
+                                                                                                <span class="text-muted small pull-right">
+                                                                                                    <em>
+                                                                                                        <i class="fa fa-calendar"></i>
+                                                                                                        19/09/2024 - Semestre 3
+                                                                                                    </em>
+                                                                                                </span>
+                                                                                            </a>
+                                                                                        
+
+                                                                                            <a href="#" class="list-group-item">
+                                                                                                <div class="row">
+                                                                                                    <span class="pull-left">Management</span>
+                                                                                                    <span class="pull-right">
+                                                                                                        
+                                                                                                            
+                                                                                                                <span class="badge badge-success">14.4</span>
+                                                                                                            
+                                                                                                        
+                                                                                                    </span>
+                                                                                                </div>
+                                                                                                <br/>
+
+                                                                                                <span class="text-muted small">
+                                                                                                    <em><i class="fa fa-user"></i> KO
+                                                                                                    </em>
+                                                                                                </span>
+
+                                                                                                <span class="text-muted small pull-right">
+                                                                                                    <em>
+                                                                                                        <i class="fa fa-calendar"></i>
+                                                                                                        19/09/2023 - Semestre 3
+                                                                                                    </em>
+                                                                                                </span>
+                                                                                            </a>
+                                                                                        
+
+                                                                                            <a href="#" class="list-group-item">
+                                                                                                <div class="row">
+                                                                                                    <span class="pull-left">Math&eacute;matiquesII</span>
+                                                                                                    <span class="pull-right">
+                                                                                                        
+                                                                                                            
+                                                                                                                <span class="badge badge-success">1.0</span>
+                                                                                                            
+                                                                                                        
+                                                                                                    </span>
+                                                                                                </div>
+                                                                                                <br/>
+
+                                                                                                <span class="text-muted small">
+                                                                                                    <em><i class="fa fa-user"></i>MTK
+                                                                                                    </em>
+                                                                                                </span>
+
+                                                                                                <span class="text-muted small pull-right">
+                                                                                                    <em>
+                                                                                                        <i class="fa fa-calendar"></i>
+                                                                                                        19/09/2023 - Semestre 3
+                                                                                                    </em>
+                                                                                                </span>
+                                                                                            </a>
+                                                                                        
+
+                                                                                            <a href="#" class="list-group-item">
+                                                                                                <div class="row">
+                                                                                                    <span class="pull-left">D&eacute;veloppement personnel</span>
+                                                                                                    <span class="pull-right">
+                                                                                                        
+                                                                                                            
+                                                                                                                <span class="badge badge-success">16.0</span>
+                                                                                                            
+                                                                                                        
+                                                                                                    </span>
+                                                                                                </div>
+                                                                                                <br/>
+
+                                                                                                <span class="text-muted small">
+                                                                                                    <em><i class="fa fa-user"></i> Jupiter FAYE
+                                                                                                    </em>
+                                                                                                </span>
+
+                                                                                                <span class="text-muted small pull-right">
+                                                                                                    <em>
+                                                                                                        <i class="fa fa-calendar"></i>
+                                                                                                        17/08/2023 - Semestre 1
+                                                                                                    </em>
+                                                                                                </span>
+                                                                                            </a>
+                                                                                        
+                                                                                    
+                                                                                </tbody>
+                                                                            </table>
+
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <div class="form-actions">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="panel-footer">
+                                                            <div class="text-right">
+                                                                <a href="/kairos_esmt/portailEtudiant/note">
+                                                                    list.view.label
+                                                                    <i class="fa fa-arrow-circle-right"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="portlet box purple-intense">
+                                                        <div class="portlet-title">
+                                                            <div class="caption">
+                                                                <i class="fa fa-money"></i>
+                                                                <i style="font-size: medium;">
+                                                                    paiementsRecent.label
+                                                                </i>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="portlet-body form">
+                                                            <div class="scrolling" style="height: 250px">
+                                                                <div class="form-body">
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+                                                                            
+                                                                                <h4 class="font-red bold text-center">
+                                                                                    portefeuilleFraisEtudiant.montantPayeImpaye.label
+                                                                                </h4>
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="panel-footer">
+                                                            <div class="text-right">
+                                                                <a href="/kairos_esmt/portailEtudiant/paiement">
+                                                                    list.view.label
+                                                                    <i class="fa fa-arrow-circle-right"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row ">
+                                                <div class="col-md-6">
+                                                    <div class="portlet box red">
+                                                        <div class="portlet-title">
+                                                            <div class="caption">
+                                                                <i class="fa fa-clock-o"></i>
+                                                                <i style="font-size: medium;">
+                                                                    absencesRetardsRecents.label
+                                                                </i>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="portlet-body form">
+                                                            <div class="scrolling" style="height: 250px">
+                                                                <div class="form-body">
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+
+                                                                            <table class="table table-bordered table-hover table-striped">
+                                                                                <tbody>
+                                                                                    
+                                                                                        
+                                                                                            <tr class="odd">
+                                                                                                <td class="col-md-12">
+                                                                                                    <div class="header">
+                                                                                                        <small class="text-muted">
+                                                                                                            
+                                                                                                                <span class="badge badge-danger">portailEtudiant.absence.labal</span>
+                                                                                                            
+                                                                                                        </small>
+
+                                                                                                        <small class="text-muted pull-right">
+                                                                                                            
+                                                                                                            
+                                                                                                            
+                                                                                                                <span class="badge badge-active">Non justifiée</span>
+                                                                                                            
+                                                                                                        &nbsp;&nbsp;&nbsp;
+                                                                                                        </small>
+                                                                                                    </div>
+
+                                                                                                    <div style="font-size: 14px; font-weight: bold;">
+                                                                                                        Bases  informatiques (IT Essentials)
+                                                                                                    </div>
+
+                                                                                                    <span class="text-muted small">
+                                                                                                        <em>
+                                                                                                            <i class="fa fa-user"></i> Doudou FAYE
+                                                                                                        </em>
+                                                                                                    </span>
+
+                                                                                                    <span class="text-muted small pull-right">
+                                                                                                        <em>
+                                                                                                            <i class="fa fa-calendar"></i>
+                                                                                                            08/02/2023
+                                                                                                        </em>
+                                                                                                    </span>
+
+                                                                                                </td>
+
+                                                                                            </tr>
+
+                                                                                        
+                                                                                    
+                                                                                </tbody>
+                                                                            </table>
+
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <div class="form-actions">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="panel-footer">
+                                                            <div class="text-right">
+                                                                <a href="/kairos_esmt/portailEtudiant/assiduite">
+                                                                    list.view.label
+                                                                    <i class="fa fa-arrow-circle-right"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="portlet box green">
+                                                        <div class="portlet-title">
+                                                            <div class="caption">
+                                                                <i class="fa fa-calendar-o"></i>
+                                                                <i style="font-size: medium;">
+                                                                    EDT.label
+                                                                </i>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="portlet-body form">
+                                                            <div class="scrolling" style="height: 250px">
+                                                                <div class="form-body">
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+                                                                            <table class="table table-bordered table-hover table-striped">
+                                                                                <tbody>
+                                                                                
+                                                                                    <h4 class="font-red bold text-center">
+                                                                                        portailParent.emploiDuTemps.notFound
+                                                                                    </h4>
+                                                                                
+                                                                                </tbody>
+                                                                            </table>
+
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <div class="form-actions">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="panel-footer">
+                                                            <div class="text-right">
+                                                                <a href="/kairos_esmt/portailEtudiant/emploiDuTemps">
+                                                                    emploiDuTemps.view.label
+                                                                    <i class="fa fa-arrow-circle-right"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                           
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- END MAIN CONTENT -->
+                </div>
+                <!-- END CONTAINER -->
+
+            </div>
+            <!-- BEGIN FOOTER -->
+            <div class="page-footer">
+    <div class="page-footer-inner">
+        
+        <span>Kairos <strong>v4.19.17</strong></span>
+        2024 &copy; <a href="https://www.sensoft.sn" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"><strong>SENSOFT</strong></a>
+
+    </div>
+    <div class="scroll-to-top">
+        <i class="icon-arrow-up"></i>
+    </div>
+</div>
+
+            <!-- END FOOTER -->
+        </div>
+
+
+        <!-- END FOOTER -->
+        <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+        <!-- BEGIN CORE PLUGINS -->
+        <!--[if lt IE 9]>
+<script src="../../assets/global/plugins/respond.min.js"></script>
+<script src="../../assets/global/plugins/excanvas.min.js"></script>
+<![endif]-->
+
+        <script src="/kairos_esmt/assets/application-0c1079e20f838f9218db0079c591c0ed.js" type="text/javascript" ></script>
+        <script src="/kairos_esmt/assets/application.style-eae21da4dd3b3116459c89b4ae24be1d.js" type="text/javascript" ></script>
+        
+        <script src="/kairos_esmt/assets/application.theme-9adfe822e16280c0a099bb47a8e13afa.js" type="text/javascript" ></script>
+        <script src="/kairos_esmt/assets/jquery.quicksearch-823494ed86729ff9694db508bcee20cf.js" type="text/javascript" ></script>
+        <script src="/kairos_esmt/assets/application.datePicker-74c84404bc96f17fe8e2cd07a0afde77.js" type="text/javascript" ></script>
+
+
+
+        <script>
+            jQuery(document).ready(function () {
+                // initiate layout and plugins
+                Metronic.init(); // init metronic core components
+                Layout.init(); // init current layout
+                ComponentsPickers.init(); // Pour le composant Date Picker
+                $('.modal').modal("hide");
+                var description = $("#champDescription").val();
+                $("#description").html(description);
+
+
+            });
+
+            function hideModalDownload() {
+                $('#downloadDocument').modal('hide');
+            }
+        </script>
+
+
+
+<script type="text/javascript">
+
+    jQuery(document).ready(function () {
+        //refreshStatutGenerationBulletin();
+
+        
+    });
+
+    $(function(){
+        $('select[multiple]').select2({
+            closeOnSelect: false
+        });
+    });
+
+    function checkForm(id){
+
+        $("#"+id+" form").validate({
+            messages: {
+                required: "default.required.message"
+            },
+            submitHandler: function(form) {
+                $("#"+id).modal('hide');
+                form.submit();
+                showSpinner();
+            }
+        });
+    }
+
+    function showSpinner() {
+//        alert("On loading");
+        $('#spinner').modal('show');
+    }
+    function hideSpinner() {
+        console.log("Hide  onLoading");
+        $('#spinner').modal('hide');
+    }
+
+   /* Ajax.Responders.register({
+        onLoading: function() {
+            showSpinner();
+        },
+        onComplete: function() {
+            if(!Ajax.activeRequestCount) hideSpinner();
+        }
+    });*/
+
+    function checkNumber(id){
+        var valeur =jQuery("#"+id).val() ;
+        var a= valeur.replace(/,/g,'.');
+        if (isNaN(a) || /\s/g.test(a) == true) {
+            jQuery("#"+id).val("") ;
+        }
+
+    }
+
+    function checkNumberInteger(id){
+        var valeur =jQuery("#"+id).val() ;
+        if (isNaN(valeur) || /\s/g.test(valeur) == true || /\./g.test(valeur) == true || !(parseFloat(valeur) == parseInt(valeur))) {
+            jQuery("#"+id).val("") ;
+        }
+    }
+
+    function checkNumberIntegerStrictPositif(id){
+        var valeur =jQuery("#"+id).val() ;
+        if (isNaN(valeur) || /\s/g.test(valeur) == true || /\./g.test(valeur) == true || !(parseFloat(valeur) == parseInt(valeur)) || (parseInt(valeur) == 0)) {
+            jQuery("#"+id).val("") ;
+        }
+    }
+
+    function checkTheForm(id){
+        $("#"+id).validate({
+            messages: {
+                required: "default.required.message"
+            },
+            submitHandler: function(form) {
+                //$("#"+id).modal('hide');
+                form.submit();
+                showSpinner();
+            }
+        });
+    }
+
+    function checkPhoneNumberWithTextMsg(phoneNumber, countryCode, eMsg, telDiv) {
+        var isValidPhoneNumber = false
+        jQuery.ajax({
+            type: "GET",
+            processData: true,
+            url: '/kairos_esmt/utils/checkPhoneNumber?phoneNumber=' + phoneNumber + '&countryCode=' + countryCode,
+            dataType: "json",
+            success: function (data) {
+                console.log("isValidPhoneNumber....."+data.isValidPhoneNumber);
+                if (data.isValidPhoneNumber === true){
+                    renderSuccessMsgInputTel(eMsg, telDiv)
+                }else{
+                    renderErrorMsgInputTel(eMsg, telDiv);
+                }
+            },
+            error: function (data) {
+                return false;
+            }
+        });
+    }
+
+    function renderErrorMsgInputTel(erMsg, teleDiv) {
+        var eMsg = erMsg;
+        var telDiv = teleDiv;
+
+        eMsg.removeClass("hide");
+        eMsg.text("Numéro invalide");
+        eMsg.addClass("text-danger");
+        telDiv.removeClass("has-success");
+        telDiv.addClass("has-error");
+    }
+
+    function renderSuccessMsgInputTel(erMsg, teleDiv) {
+        var eMsg = erMsg;
+        var telDiv = teleDiv;
+
+        eMsg.removeClass("hide");
+        eMsg.text("Numéro valide");
+        eMsg.addClass("text-success");
+        eMsg.removeClass("text-danger");
+        telDiv.removeClass("has-error");
+        telDiv.addClass("has-success");
+    }
+
+    function refreshStatutGenerationBulletin() {
+
+        jQuery.ajax({
+            type: "POST",
+            processData: true,
+            url: "/kairos_esmt/bulletinProgramme/refreshStatutGenerationBulletin",
+            dataType: "html",
+            success: function (data) {}
+        });
+    }
+
+
+</script>
+
+</body>
+<h1>POISSON D'AVRIL</h1>
+</html>
